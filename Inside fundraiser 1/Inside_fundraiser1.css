@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Tenor+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Metrophobic', sans-serif;
+}
+:root{
+    --main-color:#3EB489;
+}
+.container{
+    width: 100%;
+    height:100vh;
+    margin: 20px auto;
+    display:grid;
+    background-color: white;
+     grid-template-columns: repeat(6,1fr);
+    grid-template-rows:4% auto auto auto auto auto;
+    grid-template-areas: "header header header header header header"
+                          "section1 section1 section1 section1 section1 section1" 
+                         "section2 section2 section2 section2 section2 section2"
+                         "article article article article article article"
+                         "footer footer footer footer footer footer"; 
+}
+header{
+    width: 92%; 
+    height: 28px;
+    margin-left: 4%;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.animate__flipInX{
+    grid-area: section1;
+    width: 92%;
+    height: 400px;
+    margin-left: 4%;
+    background-image: url(../assets/Children.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    grid-row-start: 2;
+    margin-top: 3%;
+    animation-duration: 1s;
+    position: relative;
+}
+@media (Max-Width : 767px){
+    .animate__flipInX{
+        height: 200px;
+    }
+}
+.Time_Date svg{
+    color: white;
+}
+.Time_Date{
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.Time_Date div{
+    width:120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:var(--main-color);
+    border-radius:6px;
+    margin-top:1%;
+}
+.Time_Date h4{
+    margin-top:2%;
+}
+.animate__flipInX i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background:linear-gradient(180deg, rgba(16, 16, 16, 0.5) -10%, rgba(255, 255, 255, 0) 7.98%);
+    width: 100%;
+    height: 100%;
+}
+.section2{
+    grid-area: section2;
+}
+.section2 h2{
+    margin-left: 4%;
+    font-weight: bold;
+}
+.section2 .imgs{
+    margin-left: 5%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.section2 img{
+    margin-left: -10px;
+}
+.section2 .imgs::after{
+    content: "120+ donated";
+    margin-left: 1%;
+    color: #696969;
+}
+.loading{
+    width: 343px;
+    height: 8px;
+    background-color:#C2E6D9;
+    margin-top: 1%;
+    margin-left: 4%;
+    border-radius: 2px;
+}
+.loading div{
+    content: "";
+    width: 324px;
+    height: 8px;
+    background-color: var(--main-color);
+    border-radius: 2px;
+}
+.section2 p{
+    width: 92%;
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.line{
+    width: 92%;
+    margin-left: 4%;
+    border: 1px solid #E9E9E9;
+}
+article{
+    grid-area: article;
+}
+.Ora{
+    margin-left: 4%;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+article img{
+    margin-left: 4%;
+}
+.username{
+    margin-left: 1%;
+}
+.username span{
+    color: #696969;
+}
+article div{
+    display: flex;
+    align-items: center;
+}
+.Comments{
+    display: flex;
+    width: 92%;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+.Comments p{
+    color: var(--main-color);
+    font-weight: 900;
+}
+.Comments span{
+    color:#696969;
+}
+.Description{
+    margin-left: 4%;
+}
+footer{
+    grid-area: footer;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    margin-bottom: 1%;
+    background-color: var(--main-color);
+    margin-left: 4%;
+    border-radius: 8px;
+}
+@media(max-width:767px) {
+    .button{
+        width: 92%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    .username{
+        margin-left: 4%;
+    }
+}
+

@@ -126,6 +126,7 @@ button {
     background-color: #55BD97;
     overflow: hidden;
     transition: color 0.4s ease-in-out;
+    
   }
   
   button::before {
@@ -141,15 +142,16 @@ button {
     transform-origin: center;
     transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
     transition: transform 0.45s ease-in-out;
+    
   }
   
   button:hover {
     cursor: pointer;
-    color: white;
   }
   
   button:hover::before {
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+    
   }
   
 .card p{
@@ -258,7 +260,12 @@ li{
 a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
 }
+Button a:hover{
+    color: white;
+}
+
 footer svg:hover{
    color: hsl(236, 32%, 26%);
    transform: scale(10px);
