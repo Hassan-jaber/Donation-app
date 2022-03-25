@@ -77,6 +77,11 @@ header{
     border-radius:6px;
     margin-top:1%;
 }
+a{
+       cursor: pointer;
+       text-decoration: none;
+       color: white;
+}
 .Time_Date h4{
     margin-top:2%;
 }
