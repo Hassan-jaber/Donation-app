@@ -69,7 +69,7 @@ section span{
     margin-left: 4%;
     height: 50px;
 }
-.w{
+.animate__bounceIn{
     width: 69%;
     margin-left: 4%;
     height:70%;
@@ -77,14 +77,10 @@ section span{
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 30px;
-    animation-duration: 1s;
 }
-.animate__flip{ 
-    animation-duration: 1s;
 
-}
 @media (max-width:767px) {
-    .w{
+    .animate__bounceIn{
         height: 185px;
         width: 92%;
         border-radius: 8px;
